@@ -86,6 +86,21 @@ header {
         color: #fff;
 
     }
+    #registro ul li {
+    	float: left;
+
+    }
+
+       #registro ul li a {
+        display: block;
+        margin-right: 5px;
+        
+        font-size: 8px;
+
+        /*Define el espacio entre las lineas de texto.*/
+        line-height: 5px; 
+        text-align: center;
+        text-decoration: none;
 
 
     footer p {

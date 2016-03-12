@@ -98,10 +98,10 @@ header {
         font-size: 8px;
 
         /*Define el espacio entre las lineas de texto.*/
-        line-height: 5px; 
+        line-height: 0px; 
         text-align: center;
         text-decoration: none;
-
+    }
 
     footer p {
     	text-align: center;

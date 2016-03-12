@@ -19,14 +19,9 @@ body {
 	
 	color: white;
 	
-	/*background: red;*/
+
 	position: relative;
-	/*padding-bottom: 0%;
-	padding-left: 25%;
-	padding-left: 25%;
-	padding-top: 25%;
-	*/
-	
+
 	background: url("../images/logo.PNG") repeat-x;
 	background-size: 100% 100%;	
 	width: 25%;
@@ -60,15 +55,18 @@ header {
 
 #menu ul li {
     float: left;
+    list-style: none;
 }
    #menu ul li a {
         display: block;
-        margin-right: 20px;
+        margin-right: 0px;
         width: 140px;
         font-size: 14px;
+        background-color: black;
+
 
         /*Define el espacio entre las lineas de texto.*/
-        line-height: 44px; 
+        line-height: 24px; 
         text-align: center;
         text-decoration: none;
         color: #777;
@@ -78,29 +76,48 @@ header {
  
     /*Le brinda a las propiedades de HOVER y
      Selected un color particular*/
-    nav ul li a:hover {
+    #menu ul li a:hover {
         color: #fff;
     }
 
-    nav ul li.selected a { 
+    #menu ul li.selected a { 
         color: #fff;
 
     }
+
+    #registro ul {
+        text-decoration: none;
+        
+    }
+
     #registro ul li {
     	float: left;
+        list-style: none; 
+
 
     }
 
        #registro ul li a {
+        list-style: none;
         display: block;
         margin-right: 5px;
         
-        font-size: 8px;
+        font-size: 12px;
 
         /*Define el espacio entre las lineas de texto.*/
-        line-height: 0px; 
+        line-height: 2px; 
         text-align: center;
         text-decoration: none;
+        
+    }
+
+        #registro ul li a:hover {
+        color: #FF0000;
+    }
+
+    #registro ul li.selected a { 
+        color: #FF0000;
+
     }
 
     footer p {

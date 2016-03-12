@@ -1,0 +1,97 @@
+{
+	margin:  0;
+	padding: 0;
+}
+
+header, footer, aside, nav article {
+	display: block;
+}
+
+body {
+	margin: 0 auto;
+	width: 75%;
+	font: 13px/22px Helvetica, Arial Sans-serif;
+	background: #f0f0f0;
+}
+
+#slogan {
+	display: table-cell;
+	
+	color: white;
+	
+	/*background: red;*/
+	position: relative;
+	/*padding-bottom: 0%;
+	padding-left: 25%;
+	padding-left: 25%;
+	padding-top: 25%;
+	*/
+	
+	background: url("../images/logo.PNG") repeat-x;
+	background-size: 100% 100%;	
+	width: 25%;
+	padding-bottom: 0px;
+
+
+	
+}
+
+#aside {
+	display: table-cell;
+	width: 100%;
+	text-align: right;
+	font-size: 20px;
+	font-color: #8B4513;	
+
+
+}
+#superior {
+	padding: 21px;
+	background: #E3E3E3;
+	border: 1px solid #d7d7d7;
+	-webkit-border-radius: 0px;
+}
+
+header {
+	/*display: table;*/
+	background: #FFFAF0;
+
+}
+
+#menu ul li {
+    float: left;
+}
+   #menu ul li a {
+        display: block;
+        margin-right: 20px;
+        width: 140px;
+        font-size: 14px;
+
+        /*Define el espacio entre las lineas de texto.*/
+        line-height: 44px; 
+        text-align: center;
+        text-decoration: none;
+        color: #777;
+         border: 1px solid black;
+	-webkit-border-radius: 0px;
+    }
+ 
+    /*Le brinda a las propiedades de HOVER y
+     Selected un color particular*/
+    nav ul li a:hover {
+        color: #fff;
+    }
+
+    nav ul li.selected a { 
+        color: #fff;
+
+    }
+
+
+    footer p {
+    	text-align: center;
+    	font-size: 12px;
+    	margin-top: 10%;
+    }
+
+

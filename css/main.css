@@ -14,110 +14,78 @@ body {
 	background: #f0f0f0;
 }
 
-#slogan {
-	display: table-cell;
-	
-	color: white;
-	
-
-	position: relative;
-
+.slogan {
+	display: table-cell;	
 	background: url("../images/logo.PNG") repeat-x;
 	background-size: 100% 100%;	
-	width: 25%;
-	padding-bottom: 0px;
-
-
-	
+	width: 15%;	
 }
 
-#aside {
-	display: table-cell;
-	width: 100%;
-	text-align: right;
-	font-size: 20px;
-	font-color: #8B4513;	
 
-
-}
-#superior {
+.superior {
+    display: table;
 	padding: 21px;
-	background: #E3E3E3;
+    width: 100%;
+	background: white;
 	border: 1px solid #d7d7d7;
 	-webkit-border-radius: 0px;
+    text-align:center; 
 }
 
-header {
-	/*display: table;*/
-	background: #FFFAF0;
 
+.registro ul li {
+    float: left;
+    list-style: none; 
 }
+    .registro ul li a {
+       
+    margin-left: 5px;    
+    font-size: 15px;   
+    text-decoration: none;
 
-#menu ul li {
+    }
+    .registro ul li a:hover {
+        color: #3ADF00;
+    }
+
+    .registro ul li.selected a { 
+        color: #FF0000;
+    }
+.menu{
+    width: 100%;
+}
+.menu ul li {
     float: left;
     list-style: none;
+    width: 16.6%;
 }
-   #menu ul li a {
-        display: block;
-        margin-right: 0px;
-        width: 140px;
-        font-size: 14px;
-        background-color: black;
-
-
-        /*Define el espacio entre las lineas de texto.*/
-        line-height: 24px; 
-        text-align: center;
-        text-decoration: none;
-        color: #777;
-         border: 1px solid white;
-	-webkit-border-radius: 0px;
+    .menu ul li a {
+    display: block;    
+    font-size: 14px;
+    background-color: #BCF5A9;    
+    text-align: center;
+    text-decoration: none;  
+    color: #777;
+    border: 1px solid white;
+    padding: 3%;
+    -webkit-border-radius: 0px;
     }
- 
+
     /*Le brinda a las propiedades de HOVER y
-     Selected un color particular*/
-    #menu ul li a:hover {
-        color: #fff;
+    Selected un color particular*/
+    .menu ul li a:hover {
+    color: #fff;
     }
 
-    #menu ul li.selected a { 
-        color: #fff;
-
+    .menu ul li.selected a { 
+    color: #fff;
     }
 
-    #registro ul {
-        text-decoration: none;
-        
-    }
-
-    #registro ul li {
-    	float: left;
-        list-style: none; 
-
-
-    }
-
-       #registro ul li a {
-        list-style: none;
-        display: block;
-        margin-right: 5px;
-        
-        font-size: 12px;
-
-        /*Define el espacio entre las lineas de texto.*/
-        line-height: 2px; 
-        text-align: center;
-        text-decoration: none;
-        
-    }
-
-        #registro ul li a:hover {
-        color: #FF0000;
-    }
-
-    #registro ul li.selected a { 
-        color: #FF0000;
-
+ .cuerpo{
+    margin-top: 5%;
+ }   
+    .cuerpo p{
+        font-size: 130%;
     }
 
     footer p {
@@ -125,5 +93,23 @@ header {
     	font-size: 12px;
     	margin-top: 10%;
     }
+
+@font-face {
+    font-family: "Grandesign";
+    src: url("../font/Grandesign_Neue_Serif.eot") format("eot"),
+         url("../font/Grandesign Neue Serif.woff") format("woff"),
+         url("../font/Grandesign Neue Serif.ttf") format("truetype");
+}
+h1{
+  font-family:Grandesign;
+  color:#3ADF00;
+  font-size:25px;
+}
+
+h2 {
+  font-family:Grandesign;
+  color:#3ADF00;
+  font-size:40px;
+}
 
 

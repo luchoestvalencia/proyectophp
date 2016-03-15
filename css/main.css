@@ -59,10 +59,14 @@ body {
     height: 50px;
 }
 .menu ul li {
-    float: left;
+   
     list-style: none;
-    width: 16.6%;
+    
 }
+    .menu > ul >li{
+         float: left;
+         width: 16.6%;
+    }
     .menu ul li a {
     display: block;    
     font-size: 14px;
@@ -72,9 +76,11 @@ body {
     text-align: center;
     text-decoration: none;  
     color: #777;
-    border: 10px solid #f0f0f0;
     padding: 3%;
     -webkit-border-radius: 0px;
+    }
+    .menu > ul > li > a{
+        border: 10px solid #f0f0f0;
     }
 
     /*Le brinda a las propiedades de HOVER y
@@ -87,6 +93,21 @@ body {
     color: #fff;
     }
 
+    .menu ul li ul {
+
+        display:none ;
+        width: none;
+        position: absolute;
+        min-width: 140px;
+    }
+     .menu ul li:hover > ul{
+        display: block;
+    }
+
+    
+.cuerpoC{
+    text-align: center;
+}
  .cuerpo{
     margin-top: 5%;
  }   
@@ -141,11 +162,11 @@ h2 {
         box-shadow: 0 0 0 3px #EEF5F7;
         margin: 5px 0;
     }   
-    .formulario input[type="submit"]{
-        border: 1px solid #CED5D7;
-        
-        padding:  8px 16px;
-        
+   
+
+    .boton{
+        border: 1px solid #CED5D7;        
+        padding:  8px 16px;        
         font-weight: bold;
         text-shadow: 1px 1px 0px white;
 

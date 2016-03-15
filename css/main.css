@@ -54,6 +54,10 @@ body {
 .menu{
     width: 100%;
 }
+.menu ul{
+    
+    height: 50px;
+}
 .menu ul li {
     float: left;
     list-style: none;
@@ -114,5 +118,58 @@ h2 {
   color:#3ADF00;
   font-size:40px;
 }
+.formulario{
+  border: 1px solid #CED5D7;
+  border-radius: 6px;
+  background-color: white;  
+  width: 100%;
+  padding: 21px;
+  text-align: center;
+}
+    .formulario label{
+        display: block;/*esto es para que el laber se spbreponga de la caja de text*/
+        font-weight: bold;
+    }
+    .formulario div{
+        margin-bottom: 3%; /* esto los separa un poco*/
+
+    }
+    .formulario input[type="text"], .formulario input[type="password"]{
+        padding: 7px 6px;
+        width: 50%;
+        border: 1px solid #CED5D7;
+        box-shadow: 0 0 0 3px #EEF5F7;
+        margin: 5px 0;
+    }   
+    .formulario input[type="submit"]{
+        border: 1px solid #CED5D7;
+        
+        padding:  8px 16px;
+        
+        font-weight: bold;
+        text-shadow: 1px 1px 0px white;
+
+        background: #BCF5A9; /* fallback para navegadores que no soporten degradados */
+        background: -moz-linear-gradient(top, #BCF5A9 0%, #BCF5A9 100%);
+        background: -webkit-linear-gradient(top, #BCF5A9 0%,#BCF5A9 100%);
+    }
+
+    .formulario  li {
+    list-style: none; 
+    }
+    .formulario  li a {       
+    margin-left: 5px;    
+    font-size: 15px;   
+    text-decoration: none;
+
+    }
+    .formulario  li a:hover {
+        color: #3ADF00;
+    }
+
+    .formulario  li.selected a { 
+        color: #FF0000;
+    }
+
 
 

@@ -62,11 +62,13 @@ body {
     .menu ul li a {
     display: block;    
     font-size: 14px;
+    font-family:Grandesign;
+    font-weight: bold;
     background-color: #BCF5A9;    
     text-align: center;
     text-decoration: none;  
     color: #777;
-    border: 1px solid white;
+    border: 10px solid #f0f0f0;
     padding: 3%;
     -webkit-border-radius: 0px;
     }
@@ -91,7 +93,8 @@ body {
     footer p {
     	text-align: center;
     	font-size: 12px;
-    	margin-top: 10%;
+        color:#3ADF00;
+    	
     }
 
 @font-face {

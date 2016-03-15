@@ -1,0 +1,78 @@
+<!doctype html>
+<meta charset="utf-8" /> 
+<html>
+<head>
+		<title>Apuestas</title><link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+	
+</head>
+<body>
+	<header class="cabecera"> 
+		<div class="superior">
+			<div class="slogan"></div>
+			<div class="aside"><h2>. . .</h2></div>
+		</div>
+		<nav class="registro">
+			<ul>
+				<li><a href="#">Registrarse /</a></li>
+				<li><a href="./iniciar.html">Iniciar Sesión</a></li>	
+			</ul>
+		</nav>
+	
+	</br>	
+	<nav class="menu">
+		<ul>
+			<li><a href="./index.html">HOME</a></li>
+			<li><a href="#">LOTERIAS</a></li>
+			<li><a href="./apostar.html">APOSTAR</a> 
+				<ul>
+					<li><a href="./chance.html">CHANCE</a></li>
+					<li><a href="./zodiaco.html">ZODIACO</a></li>
+				</ul>
+			</li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="#">RESULTADOS</a></li>
+			<li><a href="#">MORE</a></li>
+		</ul>
+	</nav>
+</header>
+	<form class="formulario">
+	</br>
+		<div><label id="nombreA">Nombre Apostador  : </label><input type="text" value=""></div>
+		<div><label id="id">Identificación: </label><input type="text" value=""></div>	
+		<div><label id="loteria">Lotería: </label>
+			<select id="listaLoteria" name="listaLoteria" class="combo">
+				<option>Seleccione</option>
+				<option>Lotería del Quindio</option>
+			</select>
+		</div>
+		<div><label id="nCifras">Numero de Cifras: </label>
+			<select id="listaNCifras" name="listaNCifras" class="combo">
+				<option>Seleccione</option>
+				<option>2 Cifras</option>
+				<option>3 Cifras</option>
+				<option>4 Cifras</option>
+			</select>
+		</div>	
+		<div><label id="cifra1">Cifra 1 : </label><input type="text" value=""></div>
+		<div><label id="cifra2">Cifra 2 : </label><input type="text" value=""></div>	
+		<div><label id="cifra3">Cifra 3 : </label><input type="text" value=""></div>		
+		<div><label id="valoeA">Valor de la apuesta: </label><input type="text" value=""></div>	
+			
+		<div><input class="boton" type="submit" value="Agregar Apuesta"></div>	
+	</form>
+
+	<footer>
+				
+		<p>Proyecto final de la electiva PHP</p>	
+		<p>Universidad del Quindío </p>
+		<p>2016</p>
+
+
+
+	</footer>
+	
+</body>
+
+
+</html>

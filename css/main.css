@@ -151,11 +151,11 @@ h2 {
         display: block;/*esto es para que el laber se spbreponga de la caja de text*/
         font-weight: bold;
     }
-    .formulario div{
+    .formulario div {
         margin-bottom: 3%; /* esto los separa un poco*/
 
     }
-    .formulario input[type="text"], .formulario input[type="password"]{
+    .formulario input[type="text"], .formulario input[type="password"], .combo{
         padding: 7px 6px;
         width: 50%;
         border: 1px solid #CED5D7;
@@ -191,6 +191,10 @@ h2 {
     .formulario  li.selected a { 
         color: #FF0000;
     }
+
+.combo option, .combo{
+    font-weight: bold;
+}
 
 
 

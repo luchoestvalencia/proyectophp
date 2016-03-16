@@ -264,4 +264,13 @@ div.tablaResultado table {
 margin: 0 auto;
 text-align: left;
 }
-
+.admin{
+    text-align: center;
+}
+.admin > ul > li{
+     display: inline;   
+     list-style: none;    
+     text-align: center; 
+     margin-left: 1%;
+     font-size: 15px;
+}

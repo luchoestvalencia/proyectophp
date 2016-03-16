@@ -1,0 +1,100 @@
+<!doctype html>
+<meta charset="utf-8" /> 
+<html>
+<head>
+		<title>Apuestas</title><link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+	
+</head>
+<body>
+	<header class="cabecera"> 
+		<div class="superior">
+			<div class="slogan"></div>
+			<div class="aside"><h2>. . .</h2></div>
+		</div>
+		<nav class="registro" id="empleado">
+			<ul>
+				<li><a href="#">Administrar /</a></li>
+				<li><a href="./iniciar.html">Mis Apuestas</a></li>	
+			</ul>
+		</nav>
+	
+	</br>	
+	<nav class="menu">
+		<ul>
+			<li><a href="./index.html">HOME</a></li>
+			<li><a href="#">LOTERIAS</a></li>
+			<li><a href="./apostar.html">APOSTAR</a> 
+				<ul>
+					<li><a href="./chance.html">CHANCE</a></li>
+					<li><a href="./zodiaco.html">ZODIACO</a></li>
+				</ul>
+			</li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="./resultado.html">RESULTADOS</a></li>
+			<li><a href="#">MORE</a></li>
+		</ul>
+	</nav>
+</header>
+	<div class="admin">
+		<ul>
+			<li><a href="./empleados.html">Empleados</a></li>
+			<li><a href="./adminChance.html">Administrar chance</a></li>
+			<li><a href="./estadistica.html">Estadisticas</a></li>
+		</ul>
+	</div>
+	<div style="text-align:center;">	
+		<table class="tablaResultado" style="margin-top: 1%;">
+			<tr>
+				<th></th>
+				<th>Nombre</th>
+				<th>Estado</th>
+				<th>Acción</th>
+
+			</tr>
+			<tr>
+				<td><input type="radio" name="group1" value=""></td>
+				<td> Pinzon</td>
+				<td>Online</td>					
+				<td>
+					<select id="listaAccion" name="listaAccion" class="combo">
+						<option>Seleccione</option>
+						<option>Enviar Mensaje </option>
+						<option>Bloquear</option>
+						<option>Ver ventas de chances</option>					
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td><input type="radio" name="group1" value=""></td>
+				<td>Mendoza</td>
+				<td>Offline</td>	
+				<td>
+					<select id="listaAccion" name="listaAccion" class="combo">
+						<option>Seleccione</option>
+						<option>Enviar Mensaje </option>
+						<option>Bloquear</option>
+						<option>Ver ventas de chances</option>					
+					</select>
+				</td>				
+			</tr>
+		</table>
+		<div><input style="margin-top: 1%;" class="boton" type="submit" value="Enviar mensaje a todos"></div>	
+		<div><input style="margin-top: 1%;" class="boton" type="submit" value="Siguente"></div>	
+	</div>
+
+	<footer>
+				
+		<p>Proyecto final de la electiva PHP</p>	
+		<p>Universidad del Quindío </p>
+		<p>2016</p>
+
+
+
+	</footer>
+	
+</body>
+
+
+</html>

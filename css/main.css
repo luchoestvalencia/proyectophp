@@ -32,7 +32,9 @@ body {
     text-align:center; 
 }
 
-
+#empleado{
+    float: right;
+}
 .registro ul li {
     float: left;
     list-style: none; 
@@ -140,12 +142,15 @@ h2 {
   font-size:40px;
 }
 .formulario{
+    text-align: center;
+     width: 100%;
+}
+.formulario, .misApuestas ,.apuesta{
   border: 1px solid #CED5D7;
   border-radius: 6px;
-  background-color: white;  
-  width: 100%;
+  background-color: white;   
   padding: 21px;
-  text-align: center;
+  
 }
     .formulario label{
         display: block;/*esto es para que el laber se spbreponga de la caja de text*/
@@ -195,6 +200,47 @@ h2 {
 .combo option, .combo{
     font-weight: bold;
 }
+.porPagar{
+    
+  border: 1px solid #CED5D7;
+  border-radius: 6px;
+  background-color: #f0f0f0;  
+  width: 95%;
+  padding: 21px;
+  margin-bottom: 0px;
 
+}
+.tabla1{
+ display: table;
+ width: 100%;
+ margin-top: 1%;
+}
+.selda1{
+display: table-cell;  
+width: 50%;  
+}
+.selda2{
+display: table-cell;  
+width: 1%;  
+}
+table {    
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+width: 100%;
+border-collapse: collapse; 
+}
+
+td {  
+padding: 8px;  
+border-bottom: 1px solid #fff; 
+ }
+
+ .acciones li{
+
+    display: inline;
+    float:none;
+    list-style: none;
+     text-decoration: none; 
+     text-align: center;   
+ }
 
 

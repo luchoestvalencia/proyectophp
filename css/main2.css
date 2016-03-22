@@ -7,13 +7,27 @@ body {
 	
 	background: #f0f0f0;
 	font: 13px/22px Helvetica, Arial Sans-serif;
-	float: left;
+	float: right;
+	width: 100%;
+}
+header
+{
+	width: 100%;
 }
 @font-face {
     font-family: "Grandesign";
     src: url("../font/Grandesign_Neue_Serif.eot") format("eot"),
          url("../font/Grandesign Neue Serif.woff") format("woff"),
          url("../font/Grandesign Neue Serif.ttf") format("truetype");
+}
+h3
+{
+  color: #989898;
+}
+h2
+{
+  color: #68DFF0;
+  font-size: 18px;
 }
 
 
@@ -23,7 +37,7 @@ body {
 	width:100%;
 	height: 75px;
 	background:#FFD777;
-	position: absolute;
+	
 }
 .registro ul{
 	width: 100%;
@@ -35,16 +49,7 @@ body {
      text-align: center;
      margin-top: 20px;
  }
-.registro .boton_menu {
-	
-	color:#FFF;
-	text-decoration:none;
-	font-weight: bold;
-	font-size:25px;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-}
+
 .registro .inicio
 {	color:#FFF;
 	text-decoration:none;
@@ -55,12 +60,28 @@ body {
 	border-radius: 3px;
 	width: 50%;
 }
+  .registro .boton_menu { 
+    color:#FFF;
+    background: #FFD777;
+    text-decoration:none;
+    font-weight: bold;
+    font-size:25px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
 	.registro .inicio:hover {
         background-color: #FFD777;
        border: 1px solid #666666;
        color: #666666;
     }
-
+.boton{
+	color: #ffffff;
+    font-size: 16px;    
+    line-height: 60px;  
+    background: #ff865c;   
+    width: 50%;
+ }
  
 
    
@@ -69,14 +90,19 @@ body {
 .menu{
 	width: 20%;
 	height: 100%;
-	margin-top: 5%;
 	left: 0;
-	position: fixed;
+	position: absolute;
+ 
 	background: #424A5D;
-}
-.menu ul {
-	overflow: hidden;
+	text-align: center;
 	list-style: none;
+}
+
+.menu ul {
+	
+	list-style: none;
+	text-align: justify;
+
 }
 .menu ul li {
 	display:block;
@@ -104,9 +130,115 @@ body {
      .menu ul li:hover > ul{
         display: block;
     }
+ /***************************************(Imagen del logo)*************************************************************/   
+ .log{
+ 	width: 200px;
+    height: 130px;
+ }
 /************************************(cuerpo)*************************************************************************/
 .cuerpo
 {
-	margin-left: 23%;
-	margin-top: 10%;
+   width: 73%;
+	margin-left: 330px;
+	margin-top: 10px;
+
 }
+/************************************(footer)*************************************************************************/
+footer{
+   
+    margin-top: 100px;
+    width: 100%;
+    
+    background-color: #68DFF0;
+    color: #FFF;
+    text-align: center;
+}
+/***************************************(Formulario)******************************************************************/
+.formulario{
+    text-align: center;
+     width: 100%;
+}
+.formulario, .misApuestas ,.apuesta{
+  border: 1px solid #CED5D7;
+  border-radius: 6px;
+  background-color: white;   
+  padding: 21px;
+  
+}
+    .formulario label{
+        display: block;/*esto es para que el laber se sobreponga de la caja de text*/
+        font-weight: bold;
+    }
+    .formulario div {
+        margin-bottom: 3%; /* esto los separa un poco*/
+
+    }
+    .formulario input[type="text"], .formulario input[type="password"], .combo{
+        padding: 7px 6px;
+        width: 50%;
+        border: 1px solid #CED5D7;
+        box-shadow: 0 0 0 3px #EEF5F7;
+        margin: 5px 0;
+    }   
+   
+
+    
+
+    .formulario  li {
+    list-style: none; 
+    }
+    .formulario  li a {       
+    margin-left: 5px;    
+    font-size: 15px;   
+    text-decoration: none;
+
+    }
+    .formulario  li a:hover {
+        color: #3ADF00;
+    }
+
+    .formulario  li.selected a { 
+        color: #FF0000;
+    }
+/***********************************(Tablas)*********************************************************************/
+  .porPagar{
+    
+  border: 1px solid #CED5D7;
+  border-radius: 6px;
+  background-color: #f0f0f0;  
+  width: 95%;
+  padding: 21px;
+  margin-bottom: 0px;
+
+}
+.tabla1{
+ display: table;
+ width: 100%;
+ margin-top: 1%;
+}
+.selda1{
+display: table-cell;  
+width: 50%;  
+}
+.selda2{
+display: table-cell;  
+width: 50%;  
+}
+.acciones li{
+
+    display: inline;
+    float:none;
+    list-style: none;
+     text-decoration: none; 
+     text-align: center;   
+ }
+table {    
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+width: 100%;
+color: #989898;
+}
+
+td {  
+padding: 8px;  
+border-bottom: 1px solid #fff; 
+ }

@@ -1,0 +1,112 @@
+*{
+	margin:  0;
+	padding: 0;
+}
+
+body {
+	
+	background: #f0f0f0;
+	font: 13px/22px Helvetica, Arial Sans-serif;
+	float: left;
+}
+@font-face {
+    font-family: "Grandesign";
+    src: url("../font/Grandesign_Neue_Serif.eot") format("eot"),
+         url("../font/Grandesign Neue Serif.woff") format("woff"),
+         url("../font/Grandesign Neue Serif.ttf") format("truetype");
+}
+
+
+/********************Menu superior (Iniciar Sesión)***(Registrarse)************************************************/
+.registro{
+	display:block;
+	width:100%;
+	height: 75px;
+	background:#FFD777;
+	position: absolute;
+}
+.registro ul{
+	width: 100%;
+	list-style: none;
+}
+ .registro  ul li{
+     float: left;
+     width: 20%;
+     text-align: center;
+     margin-top: 20px;
+ }
+.registro .boton_menu {
+	
+	color:#FFF;
+	text-decoration:none;
+	font-weight: bold;
+	font-size:25px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.registro .inicio
+{	color:#FFF;
+	text-decoration:none;
+	float: right;
+	font-size:15px;
+	background-color: #68DFF0; 
+	border: 1px solid #64C3C2; 	
+	border-radius: 3px;
+	width: 50%;
+}
+	.registro .inicio:hover {
+        background-color: #FFD777;
+       border: 1px solid #666666;
+       color: #666666;
+    }
+
+ 
+
+   
+
+/******************************Menu despeglable (Menu)***************************************************************/
+.menu{
+	width: 20%;
+	height: 100%;
+	margin-top: 5%;
+	left: 0;
+	position: fixed;
+	background: #424A5D;
+}
+.menu ul {
+	overflow: hidden;
+	list-style: none;
+}
+.menu ul li {
+	display:block;
+	float:none;
+	border-bottom:1px solid rgba(255,255,255, .3);
+}
+.menu ul li a {
+	color:#AEB2B7;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+#icon{
+	margin-right:20%;
+}
+ 
+.menu  ul li a:hover {
+	background:#037E8C;
+}
+.menu ul li ul {
+
+        display:none ;
+       
+    }
+     .menu ul li:hover > ul{
+        display: block;
+    }
+/************************************(cuerpo)*************************************************************************/
+.cuerpo
+{
+	margin-left: 23%;
+	margin-top: 10%;
+}

@@ -242,3 +242,38 @@ td {
 padding: 8px;  
 border-bottom: 1px solid #fff; 
  }
+ /**********************************(Tabla de resultado)*****2 colores************************************************/
+.tablaResultado {
+     border: 2px solid #000;
+     text-align: center;
+     width: 80%;
+
+ }
+ .tablaResultado th {
+    background-color: #BDBDBD; 
+    font-family:Grandesign;
+    font-size: 15px;
+    color: #68DFF0;
+    font-size: 18px;
+}
+ .tablaResultado  tr:nth-child(odd) {
+    background-color: white;
+}
+
+ .tablaResultado  tr:nth-child(even) {
+    background-color: #E6E6E6;
+}
+div.tablaResultado table {
+margin: 0 auto;
+text-align: left;
+}
+.admin{
+    text-align: center;
+}
+.admin > ul > li{
+     display: inline;   
+     list-style: none;    
+     text-align: center; 
+     margin-left: 1%;
+     font-size: 15px;
+}

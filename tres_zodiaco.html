@@ -2,17 +2,16 @@
 <meta charset="utf-8" /> 
 <html>
 <head>
-		<title>Chance - Tu Chance</title>
+		<title>Zodiaco - Tu Chance</title>
 		<link rel="stylesheet" type="text/css" href="css/main2.css">
 		<link rel="stylesheet" type="text/css" href="fonts.css">
 	
 </head>
 <body>
 	<header class="cabecera"> 
-		
 		<nav class="registro" id="empleado">
 			<ul>
-				<li><a href="#" class="boton_menu"><spam class="icon-menu"></spam>TU CHANCE S.A.</a></li>			
+				<li><a href="#" class="boton_menu"><spam class="icon-menu"></spam>TU CHANCE S.A.</a></li>	
 				<li><a href="./misApuestas.html" class="inicio">Mis Apuestas </a></li>
 				<li><a href="./iniciar.html" class="inicio">Cerrar Sesión</a></li>
 			</ul>
@@ -36,20 +35,34 @@
 		</ul>
 	</nav>
 </header>
- <div class="cuerpo">
-	<div class="cuerpoC" >
-	</br>
-		 <form class="formulario" action="./apostar.html" method="POST">
-			<a href="./cuatro_cifras.html"><img src="./images/cuatro_cifras.png"></a>
-			<a href="./tres_cifras.html"><img src="./images/tres_cifras.png"></a>
-			</br>
-			<a href="./dos_cifras.html"><img src="./images/dos_cifras.png"></a>
-			<a href="./una_cifra.html"><img src="./images/una_cifra.png"></a>
-			
-		</form>
-	</div>
- </div>
+	<div class="cuerpo">
+	<h2>Zodiaco + Dos Tres</h1>
 
+	<form class="formulario">
+
+		  <input placeholder="Ingrese Citra 1" name="citra1" type="number" min="0" max="9" required/>
+		  <input placeholder="Ingrese Cifra 2" name="cifra2"  type="number" min="0" max="9" required/>
+		  <input placeholder="Ingrese Cifra 3" name="cifra3"  type="number" min="0" max="9" required/>
+	    <h2>+</h2>
+		<select id='listaAccion' name='listaAccion' class='combo'>
+			<option>Seleccione</option>
+			<option>Aries</option>
+			<option>Tauro</option>
+			<option>Géminis</option>
+			<option>Cáncer</option>
+			<option>Leo</option>
+			<option>Virgo</option>
+			<option>Libra</option>
+			<option>Escorpio</option>
+			<option>Sagitario</option>
+			<option>Capricornio</option>
+			<option>Acuario</option>
+			<option>Piscis</option>
+
+		</select>
+		<div><input class="boton" type="submit" value="Agregar Apuesta"></div>	
+	</form>	
+	</div>
 	<footer>
 				
 		<p>Proyecto final de la electiva PHP</p>	

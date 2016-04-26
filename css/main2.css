@@ -173,7 +173,7 @@ footer{
         margin-bottom: 3%; /* esto los separa un poco*/
 
     }
-    .formulario input[type="text"], .formulario input[type="password"], .combo{
+    .formulario input[type="text"], .formulario input[type="password"],.formulario input[type="number"], .combo{
         padding: 7px 6px;
         width: 50%;
         border: 1px solid #CED5D7;

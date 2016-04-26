@@ -5,6 +5,8 @@
 		<title>Empleados - Tu Chance</title>
 		<link rel="stylesheet" type="text/css" href="css/main2.css">
 		<link rel="stylesheet" type="text/css" href="fonts.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		 <script type="text/javascript" src="js/main.js"></script>
 	
 </head>
 <body>
@@ -14,6 +16,7 @@
 				<li><a href="#" class="boton_menu"><spam class="icon-menu"></spam>TU CHANCE S.A.</a></li>
 				<li><a href="./empleados.html" class="inicio">Administrar </a></li>
 				<li><a href="./misApuestas.html" class="inicio">Mis Apuestas</a></li>	
+				<li><a href="./iniciar.html" class="inicio">Cerrar Sesión</a></li>
 			</ul>
 		</nav>
 	
@@ -43,19 +46,22 @@
 			<li><a href="./estadistica.html">Estadisticas</a></li>
 		</ul>
 	</div>
-	<div style="text-align:center;">	
-		<table class="tablaResultado" style="margin-top: 1%;">
+	<div style="text-align:center;">
+
+	<table class="tablaResultado" id="miTabla" Style="width:100% ; margin-top: 1% " border="1"></table>
+
+<!--	<table class="tablaResultado" style="margin-top: 1%;">
 			<tr>
-				<th></th>
+				<th></th> 
 				<th>Nombre</th>
 				<th>Estado</th>
 				<th>Acción</th>
 
 			</tr>
 			<tr>
-				<td><input type="radio" name="group1" value=""></td>
+				<td><input type="radio" name="group1" value=""></td> 
 				<td> Pinzon</td>
-				<td>Online</td>					
+				<td><img class = "line" src="images/Verde.png"></td>					
 				<td>
 					<select id="listaAccion" name="listaAccion" class="combo">
 						<option>Seleccione</option>
@@ -67,9 +73,9 @@
 			</tr>
 
 			<tr>
-				<td><input type="radio" name="group1" value=""></td>
+				<td><input type="radio" name="group1" value=""></td> 
 				<td>Mendoza</td>
-				<td>Offline</td>	
+				<td><img class = "line" src="images/Rojo.png"></td>	
 				<td>
 					<select id="listaAccion" name="listaAccion" class="combo">
 						<option>Seleccione</option>
@@ -79,9 +85,9 @@
 					</select>
 				</td>				
 			</tr>
-		</table>
-		<div><input style="margin-top: 1%;" class="boton" type="submit" value="Enviar mensaje a todos"></div>	
-		<div><input style="margin-top: 1%;" class="boton" type="submit" value="Siguente"></div>	
+		</table> -->
+		<input  onclick="getUsuarios()" style="margin-top: 1%;" class="boton" type="submit" value="Enviar mensaje a todos">
+		<input onclick="getUsuarios()" style="margin-top: 1%;" class="boton" type="submit" value="Siguente">
 	</div>
 </div>
 	<footer>

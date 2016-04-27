@@ -90,9 +90,9 @@ h2
 .menu{
 	width: 20%;
 	height: 100%;
-	left: 0;
-	position: absolute;
- 
+    left: 0;
+
+	position: absolute; 
 	background: #424A5D;
 	text-align: center;
 	list-style: none;
@@ -107,6 +107,7 @@ h2
 .menu ul li {
 	display:block;
 	float:none;
+  position: relative;
 	border-bottom:1px solid rgba(255,255,255, .3);
 }
 .menu ul li a {
@@ -122,14 +123,27 @@ h2
 .menu  ul li a:hover {
 	background:#037E8C;
 }
-.menu ul li ul {
+.menu ul li .children {
 
-        display:none ;
+         display:none ;
+         
+        /* position: absolute;
+         z-index: 1000;*/
+         background-color: #349886;
        
     }
-     .menu ul li:hover > ul{
+     .menu ul li:hover .children{
         display: block;
+        
+       
     }
+
+    .menu ul li .caret {
+    position: relative;
+    top:3px;
+    margin-left:10px;
+    margin-right:0px;
+}
  /***************************************(Imagen del logo)*************************************************************/   
  .log{
  	width: 200px;

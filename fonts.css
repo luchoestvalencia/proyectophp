@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?sn1l1c');
-    src:    url('fonts/icomoon.eot?sn1l1c#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?sn1l1c') format('truetype'),
-        url('fonts/icomoon.woff?sn1l1c') format('woff'),
-        url('fonts/icomoon.svg?sn1l1c#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?s7irru');
+    src:    url('fonts/icomoon.eot?s7irru#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?s7irru') format('truetype'),
+        url('fonts/icomoon.woff?s7irru') format('woff'),
+        url('fonts/icomoon.svg?s7irru#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,19 +25,25 @@
 }
 
 .icon-home3:before {
-    content: "\e900";
-}
-.icon-pencil:before {
     content: "\e901";
 }
-.icon-stats-dots:before {
+.icon-pencil:before {
     content: "\e902";
 }
-.icon-clipboard:before {
+.icon-spades:before {
+    content: "\e907";
+}
+.icon-clubs:before {
+    content: "\e908";
+}
+.icon-stats-dots:before {
     content: "\e903";
 }
-.icon-menu:before {
+.icon-clipboard:before {
     content: "\e904";
+}
+.icon-menu:before {
+    content: "\e909";
 }
 .icon-earth:before {
     content: "\e905";
@@ -45,7 +51,7 @@
 .icon-plus:before {
     content: "\e906";
 }
-.icon-checkmark2:before {
-    content: "\e907";
+.icon-ctrl:before {
+    content: "\e900";
 }
 

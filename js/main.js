@@ -4,7 +4,33 @@
 //	getUsuarios();
 //}, false);
 
+$(document).ready(main);
 
+
+ 
+function main(){
+	var contador = 1;
+	$('.boton_menu').click(function(){
+		 
+		if(contador == 1){
+			$('.menu').animate({
+				left: '-100%'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('.menu').animate({
+				left: '0'
+			});
+		}
+ 
+	});
+ 
+};
+//Mostramos y ocultaos submenu
+$('.submenu').click(function(){
+	$(this).children('.children').slideToggle();
+});
 
 function getAjax(){
 	var xmlhttp;

@@ -22,7 +22,7 @@
 
 		<ul>
 			<li><a href="./index.html"><spam class="icon-home3" id = "icon"></spam>Home</a></li>
-			<li><a href="#"><spam class="icon-earth" id = "icon"></spam>Loterias</a></li>
+			<li><a href="./loteria.html"><spam class="icon-earth" id = "icon"></spam>Loterias</a></li>
 			<li><a href="#"><spam class="icon-clipboard" id = "icon"></spam>Apostar</a> 
 				<ul>
 					<li><a href="./chance.html"><spam class="icon-checkmark2" id = "icon"></spam>Chance</a></li>
@@ -44,8 +44,12 @@
 		  <input placeholder="Ingrese Cifra 2" name="cifra2"  type="number" min="0" max="9" required/>
 		  <input placeholder="Ingrese Cifra 3" name="cifra3"  type="number" min="0" max="9" required/>
 		  <input placeholder="Ingrese Cifra 4" name="cifra4"  type="number" min="0" max="9" required/>
+		   <input placeholder="Ingrese Valor a Apostar" name="valor"  type="number" min="100" required/>
+		   <select id='listaLoterias' class='combo'></select>
+
 	    
 		<div><input class="boton" type="submit" value="Agregar Apuesta"></div>	
+		<div><input onclick="cargaLoteriasComboBox()" class="boton" type="submit" value="cargar loterias al combo"></div>	
 	</form>	
 	</div>
 	<footer>

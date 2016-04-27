@@ -21,8 +21,67 @@ function getAjax(){
 	return xmlhttp;
 }
 
+function getLoterias()
+{
+	var xmlhttp= getAjax();
+	xmlhttp.onreadystatechange = function()
+	{
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
+			{
+			  document.getElementById("tablaLoterias").innerHTML= xmlhttp.responseText;
+			}
+	}
+	xmlhttp.open("GET", "/proyectophp/ServiciosPHP/getLoterias.php",true);
+	xmlhttp.send();
+}
+function cargaLoteriasComboBox()
+{
+	var xmlhttp= getAjax();
+	xmlhttp.onreadystatechange = function()
+	{
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
+			{
+			  document.getElementById("listaLoterias").innerHTML= xmlhttp.responseText;
+			}
+	}
+	xmlhttp.open("GET", "/proyectophp/ServiciosPHP/getLoteriasComboBox.php",true);
+	xmlhttp.send();
+}
+
+function crearLoteria()
+{
+	var name = document.getElementById("nombre").value;
 
 
+	if(name=="" || name==null )
+	{
+	    alert("Ingrese datos validos");
+		
+	}
+	else
+	{
+		if ( name.match(/^[A-z]+$/))	
+		{
+			var xmlhttp = getAjax();
+			xmlhttp.open("POST", "/proyectophp/ServiciosPHP/createLoteria.php?nombre="+name, true);
+			xmlhttp.send();
+			xmlhttp.onreadystatechange = function()
+			{
+				if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+				{
+					document.getElementById("respuestas").innerHTML=xmlhttp.responseText;
+					getLoterias();
+				}
+			}
+		}
+		else
+		{
+			alert("El nombre de la loteria debe contener solo letras");
+
+		}
+	
+	}
+}
 function getUsuarios()
 {
 	// llamara al getuser.php

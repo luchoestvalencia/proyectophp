@@ -5,13 +5,16 @@
 		<title>Zodiaco - Tu Chance</title>
 		<link rel="stylesheet" type="text/css" href="css/main2.css">
 		<link rel="stylesheet" type="text/css" href="fonts.css">
-	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header class="cabecera"> 
 		<nav class="registro" id="empleado">
 			<ul>
 				<li><a href="#" class="boton_menu"><spam class="icon-menu"></spam>TU CHANCE S.A.</a></li>	
+				<li><a href="#" class="boton_menu" id="sin_nombre"><spam class="icon-menu"></spam></a></li>	
 				<li><a href="./misApuestas.html" class="inicio">Mis Apuestas </a></li>
 				<li><a href="./iniciar.html" class="inicio">Cerrar Sesión</a></li>
 			</ul>
@@ -23,10 +26,11 @@
 		<ul>
 			<li><a href="./index.html"><spam class="icon-home3" id = "icon"></spam>Home</a></li>
 			<li><a href="./loteria.html"><spam class="icon-earth" id = "icon"></spam>Loterias</a></li>
-			<li><a href="#"><spam class="icon-clipboard" id = "icon"></spam>Apostar</a> 
-				<ul>
-					<li><a href="./chance.html"><spam class="icon-checkmark2" id = "icon"></spam>Chance</a></li>
-					<li><a href="./zodiaco.html"><spam class="icon-checkmark2" id = "icon"></spam>Zodiaco</a></li>
+			<li class="submenu">
+			    <a href="#"><spam class="icon-clipboard" id = "icon"></spam>Apostar <spam class="caret icon-ctrl"></spam></a> 
+				<ul class="children">
+					<li><a href="./chance.html"><spam class="icon-spades" id = "icon"></spam>Chance</a></li>
+					<li><a href="./zodiaco.html"><spam class="icon-clubs" id = "icon"></spam>Zodiaco</a></li>
 				</ul>
 			</li>
 			<li><a href="#"><spam class="icon-pencil" id = "icon"></spam>Contacto</a></li>
@@ -40,16 +44,18 @@
 
 	<form class="formulario">
 
-		  <input placeholder="Ingrese Citra 1" name="citra1" type="number" min="0" max="9" required/>
-		  <input placeholder="Ingrese Cifra 2" name="cifra2"  type="number" min="0" max="9" required/>
-		  <input placeholder="Ingrese Cifra 3" name="cifra3"  type="number" min="0" max="9" required/>
-		  <input placeholder="Ingrese Cifra 4" name="cifra4"  type="number" min="0" max="9" required/>
+		  
+		  <input placeholder="Ingrese El Numero de 4 Cifras" id="cifra4"  type="text" required/>
+		  
 		   <input placeholder="Ingrese Valor a Apostar" name="valor"  type="number" min="100" required/>
 		   <select id='listaLoterias' class='combo'></select>
 
-	    
-		<div><input class="boton" type="submit" value="Agregar Apuesta"></div>	
+	    <label class"prueba" id="prueba">Prueba</label>
+		
 		<div><input onclick="cargaLoteriasComboBox()" class="boton" type="submit" value="cargar loterias al combo"></div>	
+
+
+		
 	</form>	
 	</div>
 	<footer>

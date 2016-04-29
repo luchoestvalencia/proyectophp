@@ -21,6 +21,7 @@ Class Loteria {
 	}
 
 
+
 	function crearLoteria($nombre)
 	{
 		$this->nombre=$nombre;

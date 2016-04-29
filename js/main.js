@@ -4,7 +4,9 @@
 //	getUsuarios();
 //}, false);
 
-$(document).ready(main);
+$(document).ready( function(){
+
+
 
 
  
@@ -60,18 +62,31 @@ function getLoterias()
 	xmlhttp.open("GET", "/proyectophp/ServiciosPHP/getLoterias.php",true);
 	xmlhttp.send();
 }
+
+
 function cargaLoteriasComboBox()
 {
 	var xmlhttp= getAjax();
-	xmlhttp.onreadystatechange = function()
+	var numero = document.getElementById("cifra4").value;
+	//Valido el campo para que sea un numero de 4 cifras
+	if(numero.length==4 && numero.match(/^[0-9]+$/))
 	{
-		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
+		xmlhttp.onreadystatechange = function()
+	   {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
 			{
-			  document.getElementById("listaLoterias").innerHTML= xmlhttp.responseText;
+			  document.getElementById("prueba").innerHTML= xmlhttp.responseText;
 			}
+			
+		}	
+		xmlhttp.open("GET", "/proyectophp/ServiciosPHP/getLoteriasComboBox.php",true);
+		xmlhttp.send();
+
 	}
-	xmlhttp.open("GET", "/proyectophp/ServiciosPHP/getLoteriasComboBox.php",true);
-	xmlhttp.send();
+	else{
+			alert("Debe de ser un numero de 4 cifras");
+		}
+	
 }
 
 function crearLoteria()
@@ -252,3 +267,11 @@ function createAdmin()
 	}
 
 }
+getUsuarios();
+getLoterias();
+main();
+
+});
+
+
+

@@ -11,29 +11,30 @@ appModule.config(['$routeProvider', '$locationProvider',
 						//el componente con ng-view cargue el template Blog.html
 						$routeProvider.when('/home',{
 							templateUrl : 'home.html'
-						}).when('/loteria',{
+
+						}).when('/empleados',{
+							templateUrl : 'empleados.html'
+						}).when('/adminChance',{
+							templateUrl : 'adminChance.html'
+							}).when('/loteriasAdmin',{
+								templateUrl : 'loteriasAdmin.html'
+							})
+						.when('/estadistica',{
+							templateUrl : 'estadistica.html'
+						})
+
+						.when('/misApuestas',{
+							templateUrl : 'misApuestas.html'
+						})
+						.when('/loteria',{
 							templateUrl : 'loteria.html'
-						}).when('/chance',{
-							templateUrl : 'chance.html'
-							}).when('/cuatro_cifras',{
-								templateUrl : 'cuatro_cifras.html'
-							}).when('/tres_cifras',{
-									templateUrl : 'tres_cifras.html'
-							}).when('/dos_cifras',{
-									templateUrl : 'dos_cifras.html'
-							}).when('/una_cifra',{
-									templateUrl : 'una_cifra.html'
-						}).when('/zodiaco',{
-								templateUrl : 'zodiaco.html'
-							}).when('/cuatro_zodiaco',{
-									templateUrl : 'cuatro_zodiaco.html'
-							}).when('/tres_zodiaco',{
-								templateUrl : 'tres_zodiaco.html'
-							}).when('/dos_zodiaco',{
-								templateUrl : 'dos_zodiaco.html'
 						}).when('/resultado',{
 							templateUrl : 'resultado.html'
 						})
+
+
+
 						.otherwise({redirectTo: '/home'});							
 
 					}]);
+
